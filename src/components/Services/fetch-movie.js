@@ -1,4 +1,4 @@
-const key = '1e3bd345eb5d29ac0f4521d096bb0e9d';
+const key = 'a04463f6e73719e916bcf081dea9993b';
 
 //------ Популярні фільми---
 
