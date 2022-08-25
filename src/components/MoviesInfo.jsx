@@ -5,6 +5,7 @@ import {
 } from './MoviesInfo.styled';
 
 const MoviesInfo = ({ movie }) => {
+  console.log('movie', movie);
   const { title, vote_average, overview, genres, poster_path, release_date } =
     movie;
 
