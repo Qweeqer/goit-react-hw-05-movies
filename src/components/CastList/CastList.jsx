@@ -1,9 +1,10 @@
 const CastList = ({ cast }) => {
   return (
-    <ul>
+    <ul className="castList">
       {cast.slice(0, 10).map(({ id, name, character, profile_path }) => (
-        <li key={id}>
+        <li className="castListItem" key={id}>
           <img
+            className="castListItemImage"
             src={`https://image.tmdb.org/t/p/original/${profile_path}`}
             alt={name}
             width="100"
