@@ -1,4 +1,6 @@
 // import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 import {
   MovieInfoWrap,
   MovieInfoPoster,
@@ -36,6 +38,10 @@ const MoviesInfo = ({ movie }) => {
       </MovieOverview>
     </MovieInfoWrap>
   );
+};
+
+MoviesInfo.propTypes = {
+  movie: PropTypes.object.isRequired,
 };
 
 export default MoviesInfo;
