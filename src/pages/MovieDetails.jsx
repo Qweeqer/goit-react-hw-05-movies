@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useLocation } from 'react-router-dom';
-import { findMovieId } from '../components/Services/fetch-movie';
-import MoviesInfo from 'components/MoviesInfo';
-import AdditionalInfo from 'components/AdditionalInfo ';
+import { findMovieId } from '../Services/fetch-movie';
+import MoviesInfo from 'components/MoviesInfo/MoviesInfo';
+import AdditionalInfo from 'components/AdditionalInfo/AdditionalInfo';
 
 const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
