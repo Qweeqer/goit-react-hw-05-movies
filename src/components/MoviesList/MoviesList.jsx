@@ -1,10 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
-
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 
 const MoviesList = ({ movies }) => {
   const location = useLocation();
-
   return (
     <ul>
       {movies.map(({ id, title }) => (
