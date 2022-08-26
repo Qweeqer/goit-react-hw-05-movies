@@ -11,7 +11,7 @@ const MoviesInfo = ({ movie }) => {
   const { title, vote_average, overview, genres, poster_path, release_date } =
     movie;
 
-  let src = `https://image.tmdb.org/t/p/original/${poster_path}`;
+  let src = `https://image.tmdb.org/t/p/original${poster_path}`;
   if (poster_path === null) {
     src = `https://upload.wikimedia.org/wikipedia/commons/c/c2/No_image_poster.png`;
   }
