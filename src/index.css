@@ -1,3 +1,4 @@
+/* // eslint-disable-next-line */
 @import-normalize; /* bring in normalize.css styles */
 
 body {
@@ -7,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/fon.jpg);
 }
 
 code {
