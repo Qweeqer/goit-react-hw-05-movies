@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
+import PropTypes from 'prop-types';
 
 const AdditionalInfo = ({ location }) => {
   return (
@@ -30,6 +31,10 @@ const AdditionalInfo = ({ location }) => {
       </Suspense>
     </div>
   );
+};
+
+AdditionalInfo.propTypes = {
+  location: PropTypes.object.isRequired,
 };
 
 export default AdditionalInfo;
