@@ -1,5 +1,5 @@
 /* // eslint-disable-next-line */
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -23,4 +23,76 @@ code {
   color: white;
   background-color: orangered;
   border: 4px solid orangered;
+}
+
+/* .movieInfoPoster {
+  background-color: #f1f1f187;
+  margin-top: 10px;
+  box-shadow: 0px 2px 2px 2px grey;
+} */
+
+.additionalTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.additionalInfo {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.additionalItem {
+  width: 40%;
+  height: 25px;
+  margin-bottom: 30px;
+  /* background-color: orangered; */
+  /* color: white; */
+  text-align: center;
+  /* border: 4px solid orangered; */
+}
+.additionalLink {
+  text-decoration: aliceblue;
+  /* color: #000000; */
+  font-size: 17px;
+  line-height: 1.3;
+  text-align: center;
+  padding: 14px 40%;
+  border: 2px solid orangered;
+  color: orangered;
+}
+.additionalLink:active,
+.additionalLink:hover,
+.additionalLink:focus {
+  color: white;
+  background-color: orangered;
+  border: 4px solid orangered;
+}
+.castList {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  padding-left: 0px;
+  gap: 10px;
+}
+.castListItem {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4px;
+  border: 2px solid orangered;
+  border-radius: 4px;
+  background-color: orangered;
+  color: white;
+  font-size: 17px;
+  box-shadow: inset 2px 2px 5px 0px lightgrey;
+}
+.castListItem > p {
+  margin: 5px;
+}
+.castListItemImage {
+  width: 100%;
 }
