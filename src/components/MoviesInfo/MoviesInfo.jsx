@@ -16,7 +16,12 @@ const MoviesInfo = ({ movie }) => {
 
   return (
     <MovieInfoWrap>
-      <MovieInfoPoster src={src} alt={title} width="300" />
+      <MovieInfoPoster
+        className="movieInfoPoster"
+        src={src}
+        alt={title}
+        width="300"
+      />
       <MovieOverview>
         <h1>
           {title}({release_date.slice(0, 4)})
@@ -25,7 +30,7 @@ const MoviesInfo = ({ movie }) => {
         <h2>Overview</h2>
         <p>{overview}</p>
         <h2>Genres</h2>
-        <p>{genres.map(gene => gene.name).join(', ')}</p>
+        <p>{genres.map(genre => genre.name).join(', ')}</p>
         <h2>Release Date</h2>
         <p>{release_date}</p>
       </MovieOverview>
