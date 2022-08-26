@@ -4,20 +4,28 @@ import { Suspense } from 'react';
 const AdditionalInfo = ({ location }) => {
   return (
     <div>
-      <h3>Additional Information </h3>
-      <ul>
-        <li>
-          <Link to="cast" state={{ from: location }}>
-            Cast
-          </Link>
-        </li>
-        <li>
-          <Link to="reviews" state={{ from: location }}>
-            Reviews
-          </Link>
-        </li>
-      </ul>
+      <h3 className="additionalTitle">Additional Information </h3>
       <Suspense fallback={<div>Loading...</div>}>
+        <ul className="additionalInfo">
+          <li className="additionalItem">
+            <Link
+              className="additionalLink"
+              to="cast"
+              state={{ from: location }}
+            >
+              Cast
+            </Link>
+          </li>
+          <li className="additionalItem">
+            <Link
+              className="additionalLink"
+              to="reviews"
+              state={{ from: location }}
+            >
+              Reviews
+            </Link>
+          </li>
+        </ul>
         <Outlet />
       </Suspense>
     </div>
