@@ -1,3 +1,4 @@
+// import { Link } from 'react-router-dom';
 import {
   MovieInfoWrap,
   MovieInfoPoster,
@@ -5,7 +6,6 @@ import {
 } from './MoviesInfo.styled';
 
 const MoviesInfo = ({ movie }) => {
-  console.log('movie', movie);
   const { title, vote_average, overview, genres, poster_path, release_date } =
     movie;
 
@@ -26,6 +26,8 @@ const MoviesInfo = ({ movie }) => {
         <p>{overview}</p>
         <h2>Genres</h2>
         <p>{genres.map(gene => gene.name).join(', ')}</p>
+        <h2>Release Date</h2>
+        <p>{release_date}</p>
       </MovieOverview>
     </MovieInfoWrap>
   );
